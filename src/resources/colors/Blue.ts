@@ -1,4 +1,4 @@
-export const blue = `/* Blue Background Colors */
+export const blue = `/* Blue Background Color Palette */
 .bg-alice-b {
     background-color: #F0F8FF;
 }\n
@@ -59,7 +59,7 @@ export const blue = `/* Blue Background Colors */
 .bg-steel-b {
     background-color: #4682B4;
 }\n
-/* Blue Text Colors */
+/* Blue Text Color Palette */
 .txt-alice-b {
     color: #F0F8FF;
 }\n

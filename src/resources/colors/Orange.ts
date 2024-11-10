@@ -1,4 +1,4 @@
-export const orange = `/* Orange Background Colors */
+export const orange = `/* Orange Background Color Palette */
 .bg-dark-o {
     background-color: #FF8C00;
 }\n
@@ -8,7 +8,7 @@ export const orange = `/* Orange Background Colors */
 .bg-orange-r {
     background-color: #FF4500;
 }\n
-/* Orange Text Colors */
+/* Orange Text Color Palette */
 .txt-dark-o {
     color: #FF8C00;
 }\n

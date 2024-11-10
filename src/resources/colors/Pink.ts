@@ -1,4 +1,4 @@
-export const pink = `/* Pink Background Colors */
+export const pink = `/* Pink Background Color Palette */
 .bg-deep-p {
     background-color: #FF1493;
 }\n
@@ -11,7 +11,7 @@ export const pink = `/* Pink Background Colors */
 .bg-pink {
     background-color: #FFC8CB;
 }\n
-/* Pink Text Colors */
+/* Pink Text Color Palette */
 .txt-deep-p {
     color: #FF1493;
 }\n

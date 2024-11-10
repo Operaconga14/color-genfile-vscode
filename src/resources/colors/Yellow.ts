@@ -1,4 +1,4 @@
-export const yellow = `/* Yellow Background Colors */
+export const yellow = `/* Yellow Background Color Palette */
 .bg-green-y {
     background-color: #ADFF2F;
 }\n
@@ -11,7 +11,7 @@ export const yellow = `/* Yellow Background Colors */
 .bg-yellow {
     background-color: #FFFF00;
 }\n
-/* Yellow Text Colors */
+/* Yellow Text Color Palette */
 .txt-green-y {
     color: #ADFF2F;
 }\n

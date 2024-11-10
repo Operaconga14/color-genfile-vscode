@@ -16,7 +16,7 @@ async function loadColorFile(context: vscode.ExtensionContext, color: string): P
 	});
 }
 
-async function generateColor(directory: any, filename: string, extension: string, color: any) {
+async function generateColor(directory: any, filename: string, extension: string, color: string) {
 	const projectDir = vscode.workspace.workspaceFolders?.[0];
 
 	if (!projectDir) {
@@ -33,47 +33,47 @@ async function generateColor(directory: any, filename: string, extension: string
 		vscode.window.showErrorMessage('No workspace folder found.', `${desiredDir}`);
 	}
 
-	// find the directory and generate the file
+	// find the directory and generate the file according to it color of selection
 	switch (color) {
 		case 'Black':
 			fs.writeFileSync(fullPath, `${Colors.black}`, { flag: 'a' });
-			vscode.window.showInformationMessage('Color Generated Successfully');
+			vscode.window.showInformationMessage(`${color.toString()} palette Generated Successfully `);
 			break;
 		case 'Blue':
 			fs.writeFileSync(fullPath, `${Colors.blue}`, { flag: 'a' });
-			vscode.window.showInformationMessage('Color Generated Successfully');
+			vscode.window.showInformationMessage(`${color.toString()} palette Generated Successfully `);
 			break;
 		case 'Browns':
 			fs.writeFileSync(fullPath, `${Colors.brown}`, { flag: 'a' });
-			vscode.window.showInformationMessage('Color Generated Successfully');
+			vscode.window.showInformationMessage(`${color.toString()} palette Generated Successfully `);
 			break;
 		case 'Green':
 			fs.writeFileSync(fullPath, `${Colors.green}`, { flag: 'a' });
-			vscode.window.showInformationMessage('Color Generated Successfully');
+			vscode.window.showInformationMessage(`${color.toString()} palette Generated Successfully `);
 			break;
 		case 'Orange':
 			fs.writeFileSync(fullPath, `${Colors.orange}`, { flag: 'a' });
-			vscode.window.showInformationMessage('Color Generated Successfully');
+			vscode.window.showInformationMessage(`${color.toString()} palette Generated Successfully `);
 			break;
 		case 'Pink':
 			fs.writeFileSync(fullPath, `${Colors.pink}`, { flag: 'a' });
-			vscode.window.showInformationMessage('Color Generated Successfully');
+			vscode.window.showInformationMessage(`${color.toString()} palette Generated Successfully `);
 			break;
 		case 'Purple':
 			fs.writeFileSync(fullPath, `${Colors.purple}`, { flag: 'a' });
-			vscode.window.showInformationMessage('Color Generated Successfully');
+			vscode.window.showInformationMessage(`${color.toString()} palette Generated Successfully `);
 			break;
 		case 'Red':
 			fs.writeFileSync(fullPath, `${Colors.red}`, { flag: 'a' });
-			vscode.window.showInformationMessage('Color Generated Successfully');
+			vscode.window.showInformationMessage(`${color.toString()} palette Generated Successfully `);
 			break;
 		case 'White':
 			fs.writeFileSync(fullPath, `${Colors.white}`, { flag: 'a' });
-			vscode.window.showInformationMessage('Color Generated Successfully');
+			vscode.window.showInformationMessage(`${color.toString()} palette Generated Successfully `);
 			break;
 		case 'Yellow':
 			fs.writeFileSync(fullPath, `${Colors.yellow}`, { flag: 'a' });
-			vscode.window.showInformationMessage('Color Generated Successfully');
+			vscode.window.showInformationMessage(`${color.toString()} palette Generated Successfully `);
 			break;
 		default:
 			break;
@@ -85,9 +85,9 @@ async function generateColor(directory: any, filename: string, extension: string
 export function activate(context: vscode.ExtensionContext) {
 
 	// Show message of Activating extension
-	vscode.window.showInformationMessage('Activating Color-Genfile for Vs Code Extension...');
+	vscode.window.showInformationMessage('Activating Color Gen-File Extension...');
 	setTimeout(() => {
-		vscode.window.showInformationMessage('Congratulations, your extension "color-genfile-vscode" is now active!');
+		vscode.window.showInformationMessage('Congratulations, your extension "Color Gen-File" is now active!');
 	}, 3000);
 
 	// To generate colors
@@ -108,11 +108,11 @@ export function activate(context: vscode.ExtensionContext) {
 		// Create a filename
 		const filename = await vscode.window.showInputBox({
 			prompt: 'Give your file a name.',
-			placeHolder: 'e.g., colors'
+			placeHolder: 'e.g., colors',
 		});
 
 		if (!filename) {
-			vscode.window.showErrorMessage('Filename is needed in other not to overide your default name');
+			vscode.window.showErrorMessage('Filename is needed in other not to override your default name');
 			return;
 		}
 
@@ -120,7 +120,7 @@ export function activate(context: vscode.ExtensionContext) {
 		const selectedColor = await vscode.window.showQuickPick(
 			['Black', 'Blue', 'Brown', 'Green', 'Orange', 'Red', 'White', 'Yellow'],
 			{
-				placeHolder: 'Select the colour platte you want to generate',
+				placeHolder: 'Select the color platte you want to generate',
 				canPickMany: false
 			}
 		);
@@ -134,17 +134,17 @@ export function activate(context: vscode.ExtensionContext) {
 		// choosing of file exxtention .css or .scss
 		const exxtention = await vscode.window.showQuickPick(
 			['.Css', '.Scss'],
-			{ placeHolder: 'Select the extention you would like to use' }
+			{ placeHolder: 'Select the extension you would like to use' }
 		);
 
 		if (!exxtention) {
-			vscode.window.showErrorMessage('You need to choose a file etention to continue');
+			vscode.window.showErrorMessage('You need to choose a file extension to continue');
 			return;
 		}
 		vscode.window.showInformationMessage(`File extension will be ${filename}${exxtention.toLowerCase()} in ${directory} Folder`);
 
 		loadColorFile(context, selectedColor);
-		vscode.window.showInformationMessage('Generating the colors');
+		vscode.window.showInformationMessage('Generating your desired color palette');
 
 
 		setTimeout(() => {
@@ -167,7 +167,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 // This method is called when your extension is deactivated
 export function deactivate() {
-	vscode.window.showInformationMessage('Dont want to see you go');
+	vscode.window.showInformationMessage("Don't want to see you go");
 }
 
 

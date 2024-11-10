@@ -1,4 +1,4 @@
-export const brown = `/* Brown Background Colors */
+export const brown = `/* Brown Background Color Palette */
 .bg-brown {
     background-color: #A52A2A;
 }\n
@@ -11,7 +11,7 @@ export const brown = `/* Brown Background Colors */
 .bg-sandy {
     background-color: #F4A460;
 }\n
-/* Brown Text Colors */
+/* Brown Text Color Palette */
 .txt-brown {
     color: #A52A2A;
 }\n

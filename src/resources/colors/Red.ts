@@ -1,4 +1,4 @@
-export const red = `/* Red Background Colors */
+export const red = `/* Red Background Color Palette */
 .bg-red {
     background-color: #FF0000;
 }\n
@@ -17,7 +17,7 @@ export const red = `/* Red Background Colors */
 .bg-pale-violent-r {
     background-color: #DB7093;
 }\n
-/* Red Text Colors */
+/* Red Text Color Palette */
 .txt-red {
     color: #FF0000;
 }\n

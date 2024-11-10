@@ -1,4 +1,4 @@
-export const white = `/* White Background Colors */
+export const white = `/* White Background Color Palette */
 .bg-atique-w {
     background-color: #FAEBD7;
 }\n
@@ -17,7 +17,7 @@ export const white = `/* White Background Colors */
 .bg-whitesmoke {
     background-color: #F5F5F5;
 }\n
-/* White Text Colors */
+/* White Text Color Palette */
 .txt-atiquw {
     color: #FAEBD7;
 }\n

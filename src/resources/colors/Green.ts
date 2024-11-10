@@ -1,4 +1,4 @@
-export const green = `/* Green Background Colors */
+export const green = `/* Green Background Color Palette */
 .bg-dark-g {
     background-color: #006400;
 }\n
@@ -47,7 +47,7 @@ export const green = `/* Green Background Colors */
 .bg-light-sg {
     background-color: #20B2AA;
 }\n
-/* Green Text Colors */
+/* Green Text Color Palette */
 .txt-dark-g {
     color: #006400;
 }\n
