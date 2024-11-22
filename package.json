@@ -2,9 +2,9 @@
   "name": "color-genfile-vscode",
   "displayName": "Color Gen-File For VSCode",
   "description": "Color-Genfile is a vs code extension that helps you to generate dvarables and different colors of your choice and generate it into a css or scss file for Html, Angular React etc.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "AmireJoseph",
-  "icon": "src/resources/images/colorgenLogo.png",
+  "icon": "images/colorgen.png",
   "engines": {
     "vscode": "^1.94.0"
   },
