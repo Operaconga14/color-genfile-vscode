@@ -8,7 +8,7 @@ async function loadColorFile(context: vscode.ExtensionContext, color: string): P
 	return new Promise((resolve, reject) => {
 		fs.readFile(filePath, 'utf8', (err, data) => {
 			if (err) {
-				reject(`Error reading file for ${color}: ${err.message}`);
+				reject(`Error reading file for ${color.toString()}: ${err.message}`);
 			} else {
 				resolve(data);
 			}

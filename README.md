@@ -21,4 +21,4 @@ Color-Genfile is a VS Code extension that helps you to generate different color 
 
 ## For more information
 
-**Enjoy!**
+**Support Me:**  <a href="https://paystack.com/pay/6ylc5mjnhr">**PayStack Amire Joseph**</a>
